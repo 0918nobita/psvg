@@ -40,5 +40,8 @@
     "rimraf": "^3.0.2",
     "tsup": "^3.8.0",
     "typescript": "^4.0.5"
+  },
+  "dependencies": {
+    "astring": "^1.4.3"
   }
 }
