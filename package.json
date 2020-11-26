@@ -39,5 +39,8 @@
     "rimraf": "^3.0.2",
     "tsup": "^3.8.0",
     "typescript": "^4.0.5"
+  },
+  "dependencies": {
+    "fp-ts": "^2.9.0"
   }
 }
