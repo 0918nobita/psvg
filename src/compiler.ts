@@ -1,3 +1,4 @@
+import { interpretPSVG } from './interpreter';
 import { parsePSVG } from './parser';
 import { transpilePSVG } from './transpiler';
 
@@ -6,9 +7,10 @@ export function evalPSVG(js: string): string {
 }
 
 export function compilePSVG(psvg: string): string {
-  let prgm = parsePSVG(psvg);
+  const prgm = parsePSVG(psvg);
   // console.dir(prgm,{depth:null});
-  let js = transpilePSVG(prgm);
+  console.log(interpretPSVG(prgm));
+  const js = transpilePSVG(prgm);
   // console.log(js);
   return evalPSVG(js);
 }
